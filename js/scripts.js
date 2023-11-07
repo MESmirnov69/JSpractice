@@ -823,43 +823,6 @@ $(document).ready(function () {
 
 
 
-// // tabs home 
-// window.addEventListener('DOMContentLoaded', ()=>{
-//     const tabs = document.querySelectorAll('.tab-item'),
-//           tabsContent = document.querySelectorAll('.tab-content'),
-//           tabsParent = document.querySelector('tabs-menu');
-
-//         //функция скрытия
-//         function hideTabContent(){
-//             tabsContent.forEach(item=>{
-//                 item.style.display = 'none';
-//             });
-//         //удаляем  активный  класс
-//             tabs.forEach (item=>{
-//                 item.classList.remove('current');
-//             });
-//         }
-//         //функция отображения
-//         function showTabContent(i = 0){
-//             tabsContent[i].style.display = 'block';
-//             tabs[i].classList.add('tab-item');
-//         }
-//         hideTabContent();
-//         showTabContent();
-
-//         tabsParent.addEventListener('click', (event)=>{
-//             const target = event.target;
-//             if(target && target.classList.contains('tab__item')){
-//                 tabs.forEach((item, i)=>{
-//                     if(target == item){
-//                         hideTabContent();
-//                         showTabContent(i);
-//                     }
-//                 });
-//             }
-//         });
-// });
-
 const tabsBtn = document.querySelectorAll(".nav-btn");
 const tabsItems = document.querySelectorAll(".tab-content");
 
@@ -890,7 +853,7 @@ function onTabclick(item) {
 
     });
 
-}
+};
 
 // slider home
 const slides = document.querySelectorAll(".swiper-slide"),
@@ -921,7 +884,7 @@ next.addEventListener('click', ()=>{
 });
 
 
-// slider testi
+//slider testi
 const slidesTwo = document.querySelectorAll(".swiper-slide-testi"),
     prevTwo = document.querySelector('.tc-button-prev'),
     nextTwo = document.querySelector('.tc-button-next');
@@ -948,4 +911,3 @@ prevTwo.addEventListener('click', ()=>{
 nextTwo.addEventListener('click', ()=>{
     plusSlidesTwo(1);
 });
-
